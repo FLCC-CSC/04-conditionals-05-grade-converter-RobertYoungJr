@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Robert Young
+# DATE: 02/28/2026
+# BRIEF DESCRIPTION:  Create code that converts a numerical grade to a letter grade.
 
 
 
@@ -14,29 +14,26 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
-
-print('===== Grade Converter =====')
-
-percent = int(input('Enter a numerical grade (1-100): '))
-
-if percent > 100:
-    print('A+')
-elif percent >= 90:
-    print('A')
-elif percent >= 80:
-    print('B')
-elif percent >= 70:
-    print('C')
-elif percent >= 65:
-    print('D')
-else:
-    print('F')
-
+def main():
+    def convert_grader():
+        print("===== Grade Converter =====")
+        grade = int(input("Enter a numerical grade (1-100): "))
+        if grade < 65:
+                print("F")
+        elif grade >= 65 and grade < 70:
+                print("D")
+        elif grade >= 70 and grade < 80:
+                print("C")
+        elif grade >= 80 and grade < 90:
+                print("B")
+        elif grade >= 90 and grade <= 100:
+                print("A")
+        else:
+                print("A+")
+                   
+    convert_grader()
+main()
 ########### END YER CODE ABOVE THIS LINE ###########
-
-    
-
-
 
 ########################################
 #          SAMPLE OUTPUT
@@ -84,11 +81,6 @@ D
 
 1. What is something you would tell a future student to be careful about when
    doing this lab?
-
-
-
-
-
-
+For me, I would say I had to verify the tab indent was in the correct location
 
 '''
